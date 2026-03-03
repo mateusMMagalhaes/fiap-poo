@@ -24,12 +24,15 @@ public class SistemaPrincipal {
         System.out.println("Passageiro: " + passageiro2.nome + " | Saldo: R$" + passageiro2.saldo);
 
         // Teste mental: Se eu mudar o nome do passageiro1, o passageiro2 muda?
-        Mochila minhaMochila = new Mochila();
-        minhaMochila.cor = "preta";
-        minhaMochila.tamanhoLitros = 5;
-        minhaMochila.ziper = false;
+        Mochila minhaMochila = new Mochila("preta", 5);
         System.out.println("Minha mochila é: " + minhaMochila.cor);
         System.out.println("Minha mochila tem: " + minhaMochila.tamanhoLitros + " Litros");
         System.out.println("Minha mochila esta: " + (minhaMochila.ziper ? "Aberto" : "Fechado"));
+        minhaMochila.abrir();
+        System.out.println("Minha mochila esta: " + (minhaMochila.ziper ? "Aberto" : "Fechado"));
+        minhaMochila.podeGuardar();
+        minhaMochila.fechar();
+        System.out.println("Minha mochila esta: " + (minhaMochila.ziper ? "Aberto" : "Fechado"));
+        minhaMochila.podeGuardar();
     }
 }
