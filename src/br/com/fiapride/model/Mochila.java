@@ -23,7 +23,7 @@ public class Mochila {
         if(this.ziper){
             this.ziper = false;
             System.out.println("A mochila foi fechada!");
-            return:
+            return;
         }
         System.out.println("A mochila ja esta fechada!");
 
