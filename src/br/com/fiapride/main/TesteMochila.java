@@ -15,5 +15,8 @@ public class TesteMochila {
         minhaMochila.fechar();
         System.out.println("Minha mochila esta: " + (minhaMochila.getZiper() ? "Aberto" : "Fechado"));
         minhaMochila.podeGuardar();
+
+        MochilaDeCostas minhaMochilaDeCostas = new MochilaDeCostas("preta",5,2);
+        MochilaDeRodinha minhaMochilaDeRodinha = new MochilaDeRodinha("preta",5,2);
     }
 }
