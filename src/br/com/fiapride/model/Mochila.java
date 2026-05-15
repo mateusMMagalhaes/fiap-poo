@@ -56,12 +56,18 @@ public class Mochila {
         System.out.println("A mochila ja esta fechada!");
 
     }
-    public void podeGuardar(){
+    public void podeGuardar(int pesoKG){
         if(this.getZiper()){
             System.out.println("Pode guardar mochila Aberta!");
         }
         else{
             System.out.println("Por favor abra a mochila para guardar algo!");
+        }
+        if(pesoKG<100){
+            System.out.println("Pode guardar a mochila aguenta!");
+        }
+        else{
+            System.out.println("Por favor nao guarde a mochila vai rasgar!");
         }
     }
 }

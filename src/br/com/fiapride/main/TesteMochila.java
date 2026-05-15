@@ -11,12 +11,14 @@ public class TesteMochila {
         System.out.println("Minha mochila esta: " + (minhaMochila.getZiper() ? "Aberto" : "Fechado"));
         minhaMochila.abrir();
         System.out.println("Minha mochila esta: " + (minhaMochila.getZiper() ? "Aberto" : "Fechado"));
-        minhaMochila.podeGuardar();
+        minhaMochila.podeGuardar(5);
         minhaMochila.fechar();
         System.out.println("Minha mochila esta: " + (minhaMochila.getZiper() ? "Aberto" : "Fechado"));
-        minhaMochila.podeGuardar();
+        minhaMochila.podeGuardar(5);
 
         MochilaDeCostas minhaMochilaDeCostas = new MochilaDeCostas("preta",5,2);
         MochilaDeRodinha minhaMochilaDeRodinha = new MochilaDeRodinha("preta",5,2);
+        minhaMochilaDeRodinha.podeGuardar(100);
+        minhaMochilaDeCostas.podeGuardar(20);
     }
 }
