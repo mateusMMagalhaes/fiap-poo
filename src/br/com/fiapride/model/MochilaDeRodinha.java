@@ -9,6 +9,10 @@ public class MochilaDeRodinha extends Mochila {
 
         setQtdRodas(getQtdRodas());
     }
+    @Override
+    public void exibirTipo() {
+        System.out.println("Sou uma mochila de rodinhas!");
+    }
 
     public int getQtdRodas() {
         return this.QtdRodas;

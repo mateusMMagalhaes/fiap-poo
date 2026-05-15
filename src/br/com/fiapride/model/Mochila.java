@@ -1,6 +1,6 @@
 package br.com.fiapride.model;
 
-public class Mochila {
+public abstract class Mochila {
     private String cor;
     private int tamanhoLitros;
     private boolean ziper;
@@ -10,6 +10,8 @@ public class Mochila {
         this.setTamanho(tamanhoLitros);
         this.setZiper(false);
     }
+
+    public abstract void exibirTipo();
 
     public String getCor() {
         return this.cor;

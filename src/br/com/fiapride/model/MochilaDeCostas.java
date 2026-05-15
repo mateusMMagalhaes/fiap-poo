@@ -9,6 +9,10 @@ public class MochilaDeCostas extends Mochila {
 
         setQtdAlcas(QtdAlcas);
     }
+    @Override
+    public void exibirTipo() {
+        System.out.println("Sou uma mochila de costas!");
+    }
     public int getQtdAlcas() {
         return this.QtdAlcas;
     }
